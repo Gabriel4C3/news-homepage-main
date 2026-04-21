@@ -209,3 +209,38 @@ hr{
     align-items: center;
     margin-top: 6rem;
 }
+@media (max-width: 768px) {
+    body{
+        grid-template-areas: 
+        "header"
+        "main"
+        "aside"
+        "section"
+        "attribution";
+        grid-template-columns: 1fr;
+    }
+    .main{
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "picture"
+        "section-main";
+    }
+    .section-main{
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "the-bright"
+        "we-dive";
+    }
+    .we-dive{
+        align-items: center;
+    }
+    .read-more{
+        width: 100%;
+    }
+    .aside{
+        width: 100%;
+    }
+    .section-suggestions{
+        grid-template-columns: 1fr;
+    }
+}
