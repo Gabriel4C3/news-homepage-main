@@ -16,9 +16,9 @@ body{
     "section section section section"
     "attribution attribution attribution attribution";
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: auto auto auto auto auto;
-    gap:2.5rem;
-    padding: 2.5rem 5rem;
+   
+    gap:2.0rem;
+    padding: 2.5rem 4rem;
     font-size: 0.9375rem;
     font-family: "Inter", sans-serif;
     font-weight: 400;
@@ -45,7 +45,6 @@ a{
     grid-area: main;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto;
     grid-template-areas:
     "picture picture"
     "section-main section-main";
@@ -55,14 +54,14 @@ a{
     grid-area: section-main;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr ;
     grid-template-areas:
     "the-bright we-dive";
+    padding: 2rem;
 }
 .picture{
     grid-area: picture;
     width: 100%;
-    height: auto;
+    
 }
 .img-main{
     width: 100%;
@@ -71,7 +70,7 @@ a{
     grid-area: the-bright;
     text-align: start;
     color: hsl(240, 100%, 5%);
-    font-size: 1.25rem;
+    font-size: 1.9rem;
     font-weight: 800;
     
 }
@@ -79,8 +78,14 @@ a{
     grid-area: we-dive;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: start;
+    padding: 0.5rem;
    
+}
+.paragrafo{
+    font-size: 1.25rem;
+    text-align:start;
 }
 .read-more{
     padding: 1rem 1rem;
@@ -101,12 +106,15 @@ a{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto;
-    gap: 1rem;
+    
     background-color: hsl(240, 100%, 5%);
     color: hsl(36, 100%, 99%);
     text-align: justify;
     padding: 2rem;
 
+}
+hr{
+    padding:0;
 }
 .aside-title{
     color: hsl(35, 77%, 62%);
