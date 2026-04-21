@@ -16,14 +16,11 @@ body{
     "section section section section"
     "attribution attribution attribution attribution";
     grid-template-columns: 1fr 1fr 1fr 1fr;
-   
     gap:2.0rem;
-    padding: 2.5rem 4rem;
+    margin: 3rem 4.1rem;
     font-size: 0.9375rem;
     font-family: "Inter", sans-serif;
-    font-weight: 400;
-
-    
+    font-weight: 400; 
 }
 .header{
     grid-area: header;
@@ -33,11 +30,12 @@ body{
 }
 .nav{
     display: flex;
-    gap: 1.5rem;
+    justify-content: space-evenly;
+    gap: 2.5rem;
 }
 a{
     text-decoration: none;
-    color: black;
+    color:  hsl(236, 13%, 42%);
     font-size: 0.9rem;
     font-weight: 500;
 }
@@ -81,55 +79,57 @@ a{
     justify-content: space-between;
     align-items: start;
     padding: 0.5rem;
-   
 }
 .paragrafo{
-    font-size: 1.25rem;
+    font-size: 1.23rem;
     text-align:start;
+    color:  hsl(236, 13%, 42%);
 }
 .read-more{
+    display: flex;
     padding: 1rem 1rem;
     background-color:hsl(5, 85%, 63%);
     color:hsl(240, 100%, 5%);
-    width: 50%;
+    width: 55%;
     justify-self: start;
     text-transform: uppercase;
-    font-weight: 700;
+    font-weight: 800;
     text-align: center;
     margin-top: 2rem;
-
-    
+    letter-spacing: 0.4rem;
+    flex-flow: row nowrap;
+    font-size: 0.8rem;  
 }
-
 .aside{
     grid-area: aside;
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto;
-    
+    grid-template-columns: auto;
+    width: 21.875rem;
     background-color: hsl(240, 100%, 5%);
     color: hsl(36, 100%, 99%);
     text-align: justify;
-    padding: 2rem;
-
+    padding: 1.25rem;
 }
 hr{
     padding:0;
+    height: 0;
 }
 .aside-title{
     color: hsl(35, 77%, 62%);
+    font-size: 2.25rem;
 }
 .section{
     grid-area: section;
-}
-.attribution{
-    grid-area: attribution;
 }
 .section-suggestions{
     grid-area: section;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 1rem;}
+.img{
+    width:6.2rem;
+    margin-right: 1rem;
+}
 .sug-01{
     display: grid;
     grid-template-areas: 
@@ -138,14 +138,10 @@ hr{
     "img-retro text1";  
 }
 .img-retro{
-    width: 100%;
     grid-area: img-retro;
 }
 .nuber1{
     grid-area: nuber1;
-    color: hsl(5, 85%, 63%);
-    font-size: 1.5rem;
-    font-weight: 700;
 }
 .reviving{
     grid-area: reviving;
@@ -153,6 +149,7 @@ hr{
 }
 .text1{
     grid-area: text1;
+    color:  hsl(236, 13%, 42%);
 }
 .sug-02{
     display: grid;
@@ -162,14 +159,10 @@ hr{
     "img-top-laptops text2";
 }
 .img-top-laptops{
-    width: 100%;
     grid-area: img-top-laptops;
 }
 .nuber2{
     grid-area: nuber2;
-    color: hsl(5, 85%, 63%);
-    font-size: 1.5rem;
-    font-weight: 700;
 }
 .top-laptops{
     grid-area: top-laptops;
@@ -177,8 +170,8 @@ hr{
 }
 .text2{
     grid-area: text2;
+    color:  hsl(236, 13%, 42%);
 }
-
 .sug-03{
     display: grid;
     grid-template-areas: 
@@ -187,14 +180,11 @@ hr{
     "img-gaming text3";
 }
 .img-gaming{
-    width: 100%;
     grid-area: img-gaming;
 }
 .nuber3{
     grid-area: nuber3;
-    color: hsl(5, 85%, 63%);
-    font-size: 1.5rem;
-    font-weight: 700;
+   
 }
 .gaming{
     grid-area: gaming;
@@ -202,4 +192,20 @@ hr{
 }
 .text3{
     grid-area: text3;
+    color:  hsl(236, 13%, 42%);
+}
+.text1,.text2,.text3{
+    font-size: 1.1rem;
+}
+.nuber1,.nuber2,.nuber3{
+     color: hsl(5, 85%, 63%);
+    font-size: 1.9rem;
+    font-weight: 800;
+}
+.attribution{
+    grid-area: attribution;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6rem;
 }
