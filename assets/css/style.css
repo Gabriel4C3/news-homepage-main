@@ -55,30 +55,45 @@ a{
     grid-area: section-main;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr ;
     grid-template-areas:
     "the-bright we-dive";
 }
 .picture{
     grid-area: picture;
     width: 100%;
+    height: auto;
 }
 .img-main{
     width: 100%;
 }
 .the-bright{
     grid-area: the-bright;
+    text-align: start;
     color: hsl(240, 100%, 5%);
+    font-size: 1.25rem;
+    font-weight: 800;
     
 }
 .we-dive{
     grid-area: we-dive;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
    
 }
 .read-more{
-    padding: 2rem 2rem;
+    padding: 1rem 1rem;
     background-color:hsl(5, 85%, 63%);
     color:hsl(240, 100%, 5%);
+    width: 50%;
+    justify-self: start;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 2rem;
+
+    
 }
 
 .aside{
