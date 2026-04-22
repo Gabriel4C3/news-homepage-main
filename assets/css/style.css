@@ -246,7 +246,7 @@ hr{
         "section"
         "attribution";
         grid-template-columns: 1fr;
-    }
+        padding:0.5rem; }
     .main{
         grid-template-columns: 1fr;
         grid-template-areas:
